@@ -7,7 +7,13 @@ double convC2F(double c)
 
 int main()
 {
-    printf("%f\n", convC2F(0.0));
-    printf("%f\n", convC2F(100.0));
+    printf("%.1f\n", convC2F(20.0));
+    /* expects
+        68.0
+    */
+    printf("%.1f\n", convC2F(0.0));
+    /* expects
+        32.0
+    */
     return 0;
 }

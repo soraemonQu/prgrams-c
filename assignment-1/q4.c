@@ -23,8 +23,19 @@ void qe_solve(double a, double b, double c)
 
 int main()
 {
-    qe_solve(1.0, 3.0, 1.0);
-    qe_solve(1.0, 2.0, 1.0);
-    qe_solve(1.0, 1.0, 1.0);
+    qe_solve(1, -4, 3);
+    /* expects
+        x1 = 3.0
+        x2 = 1.0
+    */
+    qe_solve(1, 2, 1);
+    /* expects
+        x = -1.0
+    */
+    qe_solve(2, 2, 1);
+    /* expects
+        x1 = -0.5 + 0.5i
+        x2 = -0.5 - 0.5i
+    */
     return 0;
 }
