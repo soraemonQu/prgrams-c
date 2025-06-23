@@ -1,22 +1,21 @@
+#include <math.h>
 #include <stdio.h>
 
 void primes(int n)
 {
-    int len = 0;
-    int gained[1000] = {};
-    for (int i = 2; i < n; i++)
+    short nums[n - 1];
+    for (int i = 2; i <= n; i++)
     {
-        short flag = 0;
-        for (int j = 0; j < len; j++)
+        if (nums[i - 2] == 1)
+            continue;
+        if (i <= sqrt(n))
         {
-            if (i % gained[j] == 0)
-                flag = 1;
+            for (int j = i; j <= n / i; j++)
+            {
+                nums[i * j - 2] = 1;
+            }
         }
-        if (flag == 0)
-        {
-            gained[len++] = i;
-            printf("%i\n", i);
-        }
+        printf("%i\n", i);
     }
 }
 
