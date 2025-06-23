@@ -4,6 +4,8 @@
 void primes(int n)
 {
     short nums[n - 1];
+    for (int p = 0; p < n - 1; p++)
+        nums[p] = 0;
     for (int i = 2; i <= n; i++)
     {
         if (nums[i - 2] == 1)
