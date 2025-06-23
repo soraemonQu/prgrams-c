@@ -4,7 +4,7 @@ void primes(int n)
 {
     int len = 0;
     int gained[1000] = {};
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; i < n; i++)
     {
         short flag = 0;
         for (int j = 0; j < len; j++)
