@@ -1,4 +1,4 @@
-*/*
-!*.c
+assignments/*/*
 .vscode/
+!*.c
 !.gitignore
