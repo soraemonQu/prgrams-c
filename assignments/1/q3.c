@@ -15,9 +15,9 @@ int main()
     {
         double result = convC2F(inputs[i]);
         if (result == expected[i])
-            fprintf(stdout, "CASE %i/%i : OK\n", i + 1, l);
+            fprintf(stdout, "CASE %d/%d : OK\n", i + 1, l);
         else
-            fprintf(stderr, "CASE %i/%i : NG <expected %.1f, got %.1f>\n", i + 1, l, expected[i], result);
+            fprintf(stderr, "CASE %d/%d : NG <expected %.1f, got %.1f>\n", i + 1, l, expected[i], result);
     }
     printf("\n");
 

@@ -1,4 +1,6 @@
 assignments/*/*
+algorithms/*
 .vscode/
 !*.c
+!*.md
 !.gitignore

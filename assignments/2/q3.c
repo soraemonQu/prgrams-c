@@ -17,7 +17,7 @@ void primes(int n)
                 nums[i * j - 2] = 1;
             }
         }
-        printf("%i\n", i);
+        printf("%d\n", i);
     }
 }
 
